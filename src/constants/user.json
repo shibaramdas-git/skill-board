@@ -1,0 +1,234 @@
+[
+  {
+    "userId": 1,
+    "userUniqueId": "200001",
+    "fullname": "John Doe",
+    "mobile": "1234567890",
+    "createdAt": "2023-07-01",
+    "userStatus": 2,
+    "toWatch": false,
+    "userDevices": [
+      { "deviceName": "Device 1", "deviceId": "1234567890" },
+      { "deviceName": "Device 2", "deviceId": "1234567890" }
+    ]
+  },
+  {
+    "userId": 2,
+    "userUniqueId": "200002",
+    "fullname": "Jane Smith",
+    "mobile": "9876543210",
+    "createdAt": "2023-06-15",
+    "userStatus": 1,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device A", "deviceId": "9876543210" },
+      { "deviceName": "Device B", "deviceId": "9876543210" }
+    ]
+  },
+  {
+    "userId": 3,
+    "userUniqueId": "200003",
+    "fullname": "Alice Johnson",
+    "mobile": "5556667777",
+    "createdAt": "2023-05-20",
+    "userStatus": 3,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device X", "deviceId": "5556667777" }]
+  },
+  {
+    "userId": 4,
+    "userUniqueId": "200004",
+    "fullname": "Bob Williams",
+    "mobile": "1112223333",
+    "createdAt": "2023-04-10",
+    "userStatus": 2,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device Alpha", "deviceId": "1112223333" },
+      { "deviceName": "Device Beta", "deviceId": "1112223333" },
+      { "deviceName": "Device Gamma", "deviceId": "1112223333" }
+    ]
+  },
+  {
+    "userId": 5,
+    "userUniqueId": "200005",
+    "fullname": "Charlie Brown",
+    "mobile": "9998887777",
+    "createdAt": "2023-03-05",
+    "userStatus": 1,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device M", "deviceId": "9998887777" }]
+  },
+  {
+    "userId": 6,
+    "userUniqueId": "200006",
+    "fullname": "David Clark",
+    "mobile": "7776665555",
+    "createdAt": "2023-02-14",
+    "userStatus": 3,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device Z", "deviceId": "7776665555" }]
+  },
+  {
+    "userId": 7,
+    "userUniqueId": "200007",
+    "fullname": "Eve Adams",
+    "mobile": "3334445555",
+    "createdAt": "2023-01-30",
+    "userStatus": 1,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device Omega", "deviceId": "3334445555" },
+      { "deviceName": "Device Theta", "deviceId": "3334445555" }
+    ]
+  },
+  {
+    "userId": 8,
+    "userUniqueId": "200008",
+    "fullname": "Franklin Harris",
+    "mobile": "8889990000",
+    "createdAt": "2022-12-25",
+    "userStatus": 2,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device Delta", "deviceId": "8889990000" }]
+  },
+  {
+    "userId": 9,
+    "userUniqueId": "200009",
+    "fullname": "Grace Miller",
+    "mobile": "2221113333",
+    "createdAt": "2022-11-10",
+    "userStatus": 3,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device Kappa", "deviceId": "2221113333" },
+      { "deviceName": "Device Lambda", "deviceId": "2221113333" }
+    ]
+  },
+  {
+    "userId": 10,
+    "userUniqueId": "200010",
+    "fullname": "Henry White",
+    "mobile": "6667778888",
+    "createdAt": "2022-10-05",
+    "userStatus": 1,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device Sigma", "deviceId": "6667778888" }]
+  },
+  {
+    "userId": 1,
+    "userUniqueId": "200001",
+    "fullname": "John Doe",
+    "mobile": "1234567890",
+    "createdAt": "2023-07-01",
+    "userStatus": 2,
+    "toWatch": false,
+    "userDevices": [
+      { "deviceName": "Device 1", "deviceId": "1234567890" },
+      { "deviceName": "Device 2", "deviceId": "1234567890" }
+    ]
+  },
+  {
+    "userId": 2,
+    "userUniqueId": "200002",
+    "fullname": "Jane Smith",
+    "mobile": "9876543210",
+    "createdAt": "2023-06-15",
+    "userStatus": 1,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device A", "deviceId": "9876543210" },
+      { "deviceName": "Device B", "deviceId": "9876543210" }
+    ]
+  },
+  {
+    "userId": 3,
+    "userUniqueId": "200003",
+    "fullname": "Alice Johnson",
+    "mobile": "5556667777",
+    "createdAt": "2023-05-20",
+    "userStatus": 3,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device X", "deviceId": "5556667777" }]
+  },
+  {
+    "userId": 4,
+    "userUniqueId": "200004",
+    "fullname": "Bob Williams",
+    "mobile": "1112223333",
+    "createdAt": "2023-04-10",
+    "userStatus": 2,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device Alpha", "deviceId": "1112223333" },
+      { "deviceName": "Device Beta", "deviceId": "1112223333" },
+      { "deviceName": "Device Gamma", "deviceId": "1112223333" }
+    ]
+  },
+  {
+    "userId": 5,
+    "userUniqueId": "200005",
+    "fullname": "Charlie Brown",
+    "mobile": "9998887777",
+    "createdAt": "2023-03-05",
+    "userStatus": 1,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device M", "deviceId": "9998887777" }]
+  },
+  {
+    "userId": 6,
+    "userUniqueId": "200006",
+    "fullname": "David Clark",
+    "mobile": "7776665555",
+    "createdAt": "2023-02-14",
+    "userStatus": 3,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device Z", "deviceId": "7776665555" }]
+  },
+  {
+    "userId": 7,
+    "userUniqueId": "200007",
+    "fullname": "Eve Adams",
+    "mobile": "3334445555",
+    "createdAt": "2023-01-30",
+    "userStatus": 1,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device Omega", "deviceId": "3334445555" },
+      { "deviceName": "Device Theta", "deviceId": "3334445555" }
+    ]
+  },
+  {
+    "userId": 8,
+    "userUniqueId": "200008",
+    "fullname": "Franklin Harris",
+    "mobile": "8889990000",
+    "createdAt": "2022-12-25",
+    "userStatus": 2,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device Delta", "deviceId": "8889990000" }]
+  },
+  {
+    "userId": 9,
+    "userUniqueId": "200009",
+    "fullname": "Grace Miller",
+    "mobile": "2221113333",
+    "createdAt": "2022-11-10",
+    "userStatus": 3,
+    "toWatch": true,
+    "userDevices": [
+      { "deviceName": "Device Kappa", "deviceId": "2221113333" },
+      { "deviceName": "Device Lambda", "deviceId": "2221113333" }
+    ]
+  },
+  {
+    "userId": 10,
+    "userUniqueId": "200010",
+    "fullname": "Henry White",
+    "mobile": "6667778888",
+    "createdAt": "2022-10-05",
+    "userStatus": 1,
+    "toWatch": false,
+    "userDevices": [{ "deviceName": "Device Sigma", "deviceId": "6667778888" }]
+  }
+]
