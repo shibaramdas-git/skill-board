@@ -11,7 +11,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: 'Ecommerce',
-    url: '/dashboard/ecommerce/products',
+    url: '/dashboard/ecommerce',
     icon: 'dashboard',
     shortcut: ['e', 'e'],
     items: [
