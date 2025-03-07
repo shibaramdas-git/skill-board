@@ -7,6 +7,7 @@ import {
   DialogDescription
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
+import { Separator } from '../ui/separator';
 
 type ModalSize = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'screen';
 
@@ -46,9 +47,10 @@ export const CommonModal: React.FC<CommonModalProps> = ({
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className={`${widthClass} max-h-[90vh] overflow-y-auto`}>
-        <DialogHeader>
+        <DialogHeader className=''>
           <DialogTitle>{title}</DialogTitle>
           <DialogDescription>{subtitle || ''}</DialogDescription>
+          <Separator className='mx-auto w-[95%]' />
         </DialogHeader>
 
         <div className='py-4'>{body}</div>

@@ -22,6 +22,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Combobox } from '@/components/ui/table/combobox';
 import AddProductForm from './add-product-form';
+import { ViewProductDetails } from './view-product-modal';
 
 export default function ProductsPage() {
   const [openAdd, setOpenAdd] = useState(false);
@@ -29,6 +30,7 @@ export default function ProductsPage() {
   const [openView, setOpenView] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [products, setProducts] = useState<IProduct[]>();
+  const [selectedProduct, setSelectedProduct] = useState<IProduct | null>(null);
   const [categories, setCategories] = useState<ICategory[]>([]);
   const [openDelete, setOpenDelete] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -114,7 +116,10 @@ export default function ProductsPage() {
           <>
             <span
               className='cell-action-icon mr-2'
-              onClick={() => setOpenView(true)}
+              onClick={() => {
+                setOpenView(true);
+                setSelectedProduct(row.original);
+              }}
             >
               <Eye size={17} />
             </span>
@@ -234,12 +239,18 @@ export default function ProductsPage() {
       )}
       {openView && (
         <CommonModal
-          modalSize='lg'
+          modalSize='2xl'
           isOpen={openView}
           onClose={() => setOpenView(false)}
           title='View Details'
           // subtitle='Viewing details of foo'
-          body={<div className='h-[350px]'>view modal</div>}
+          body={
+            <>
+              {selectedProduct && (
+                <ViewProductDetails product={selectedProduct} />
+              )}
+            </>
+          }
           closeTitle='Close'
         />
       )}
