@@ -45,7 +45,7 @@ export const CommonModal: React.FC<CommonModalProps> = ({
   const widthClass = sizeClasses[modalSize] || modalSize;
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className={`${widthClass}`}>
+      <DialogContent className={`${widthClass} max-h-[90vh] overflow-y-auto`}>
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
           <DialogDescription>{subtitle || ''}</DialogDescription>

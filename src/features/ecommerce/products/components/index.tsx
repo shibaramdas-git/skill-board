@@ -4,25 +4,14 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
 import { DataTable } from '@/components/ui/table/data-table';
 import { DataTableSearch } from '@/components/ui/table/data-table-search';
 import { ColumnDef } from '@tanstack/react-table';
 import axios from 'axios';
-import { Divide, Ellipsis, Eye, EyeClosed, Pencil, Trash } from 'lucide-react';
+import { Ellipsis, Eye, Pencil, Trash } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { toast } from 'sonner';
-import { ICategory, IProduct, IProductListResponse } from '../types';
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue
-} from '@/components/ui/select';
-import ProductTableAction from './product-table-action';
+import { ICategory, IProduct } from '../types';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -32,6 +21,7 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import { Combobox } from '@/components/ui/table/combobox';
+import AddProductForm from './add-product-form';
 
 export default function ProductsPage() {
   const [openAdd, setOpenAdd] = useState(false);
@@ -256,39 +246,14 @@ export default function ProductsPage() {
       {openAdd && (
         <CommonModal
           isOpen={openAdd}
+          modalSize='screen'
           onClose={() => setOpenAdd(false)}
-          onSubmit={() => {
-            setOpenAdd(false);
-            if (openAdd) toast.success('Status updated successfully !');
-          }}
+          // onSubmit={() => {
+          //   setOpenAdd(false);
+          //   if (openAdd) toast.success('Status updated successfully !');
+          // }}
           title='Add data form'
-          body={
-            <div className='flex flex-col gap-4'>
-              <div>
-                <Label htmlFor='name'>Add new data</Label>
-                <Input
-                  id='field 1'
-                  name=''
-                  defaultValue=''
-                  onChange={(e) => console.log(e.target.value)}
-                  placeholder='Enter field 1 value'
-                />
-              </div>
-              <div>
-                <Label htmlFor='name'>Add new data</Label>
-
-                <Input
-                  id='field 2'
-                  name=''
-                  defaultValue=''
-                  onChange={(e) => console.log(e.target.value)}
-                  placeholder='Enter field 2 value'
-                />
-              </div>
-            </div>
-          }
-          closeTitle='Cancel'
-          submitTitle='Submit'
+          body={<AddProductForm />}
         />
       )}
       {openDelete && (
