@@ -4,26 +4,26 @@ import { NavItem } from 'types';
 export const navItems: NavItem[] = [
   {
     title: 'Crypto Dashboard',
-    url: '#',
+    url: '/dashboard/crypto',
     icon: 'dashboard',
-    shortcut: ['e', 'e'],
+    shortcut: ['cr', 'cr'],
     items: []
   },
   {
     title: 'Ecommerce',
-    url: '#',
+    url: '/dashboard/ecommerce/products',
     icon: 'dashboard',
     shortcut: ['e', 'e'],
     items: [
       {
         title: 'Products',
-        url: '#',
-        shortcut: ['d', 'd']
+        url: '/dashboard/ecommerce/products',
+        shortcut: ['p', 'p']
       },
       {
         title: 'Users',
-        url: '#',
-        shortcut: ['d', 'd']
+        url: '/dashboard/ecommerce/users',
+        shortcut: ['u', 'u']
       }
     ]
   },
@@ -121,13 +121,14 @@ export const navItems: NavItem[] = [
     url: '/dashboard/users',
     icon: 'users',
     isActive: false,
-    shortcut: ['u', 'u'],
+    shortcut: ['ui', 'ui'],
     items: []
   },
   {
     title: 'App Settings',
     url: '#',
     icon: 'settings',
+    shortcut: ['e', 'e'],
     items: [
       {
         title: 'Notification',
