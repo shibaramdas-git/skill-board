@@ -41,13 +41,13 @@ export const navItems: NavItem[] = [
     shortcut: ['e', 'e'],
     items: [
       {
-        title: 'FireChat',
-        url: '#',
+        title: 'Support team chat',
+        url: '/dashboard/support/support-chat',
         shortcut: ['d', 'd']
       },
       {
-        title: 'AiChat bot',
-        url: '#',
+        title: 'Customer chat',
+        url: '/dashboard/support/customer-chat',
         shortcut: ['d', 'd']
       }
     ]

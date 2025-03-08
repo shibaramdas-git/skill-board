@@ -57,7 +57,7 @@ export default function AddProductForm() {
     //   </CardHeader>
     //   <CardContent>
     <div className=''>
-      <div className='mb-4 grid grid-cols-1 gap-4 lg:grid-cols-2'>
+      <div className='grid grid-cols-1 gap-6 px-6 lg:grid-cols-2'>
         {/* Product Title */}
         <div>
           <Label>Title</Label>
@@ -284,7 +284,7 @@ export default function AddProductForm() {
           </div>
         </div>
       </div>
-      <div className='flex justify-center gap-4'>
+      <div className='mt-4 flex justify-center gap-4'>
         <Button className='w-1/2 md:w-[140px]'>Add Product</Button>
         <Button className='w-1/2 md:w-[140px]' variant='outline'>
           Reset

@@ -98,7 +98,7 @@ export default function NoticeBoardPage() {
                   <Label className='text-md mb-4 font-semibold'>
                     Preview in app
                   </Label>
-                  <div className='min-h-[25vh] rounded-sm border border-gray-300 bg-background p-4 leading-[1.5] text-foreground'>
+                  <div className='min-h-[60vh] rounded-sm border border-gray-300 bg-background p-4 leading-[1.5] text-foreground'>
                     <h3 className='mb-2 text-center font-semibold'>
                       Terms And Conditions
                     </h3>
@@ -109,73 +109,6 @@ export default function NoticeBoardPage() {
                     />
                   </div>
                 </div>
-              </div>
-              {/* Withdraw & Deposit Fields */}
-              <div className='grid grid-cols-2 gap-4'>
-                <FormField
-                  control={form.control}
-                  name='minimumWithdraw'
-                  render={({ field }) => (
-                    <FormItem>
-                      <Label>Minimum Withdraw</Label>
-                      <FormControl>
-                        <Input
-                          {...field}
-                          placeholder='Enter minimum withdraw amount'
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name='maximumWithdraw'
-                  render={({ field }) => (
-                    <FormItem>
-                      <Label>Maximum Withdraw</Label>
-                      <FormControl>
-                        <Input
-                          {...field}
-                          placeholder='Enter maximum withdraw amount'
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name='minimumDeposit'
-                  render={({ field }) => (
-                    <FormItem>
-                      <Label>Minimum Deposit</Label>
-                      <FormControl>
-                        <Input
-                          {...field}
-                          placeholder='Enter minimum deposit amount'
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name='maximumDeposit'
-                  render={({ field }) => (
-                    <FormItem>
-                      <Label>Maximum Deposit</Label>
-                      <FormControl>
-                        <Input
-                          {...field}
-                          placeholder='Enter maximum deposit amount'
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
               </div>
 
               {/* Submit Button */}

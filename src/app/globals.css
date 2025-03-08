@@ -145,11 +145,11 @@
 /* React quill editor styles */
 
 .customize-quill .ql-container {
-  @apply min-h-[20vh] rounded-b-sm; /* Tailwind utility inside CSS */
+  @apply min-h-[60vh] rounded-b-sm; /* Tailwind utility inside CSS */
 }
 
 .customize-quill .ql-editor {
-  @apply min-h-[20vh] rounded-b-sm bg-background text-base text-foreground; /* Ensures min-height applies to the text input */
+  @apply min-h-[60vh] rounded-b-sm bg-background text-base text-foreground; /* Ensures min-height applies to the text input */
 }
 .customize-quill .ql-toolbar {
   @apply rounded-t-sm bg-secondary; /* Ensures min-height applies to the text input */

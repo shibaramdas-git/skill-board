@@ -12,8 +12,8 @@ export default function Page(props: pageProps) {
     <PageContainer>
       <div className='flex flex-1 flex-col space-y-4 pb-4'>
         <Heading
-          title='Withdraw screen'
-          description='Manage application withdraw screen.'
+          title='Notice board'
+          description='Manage application notice board.'
         />
         <Separator />
         <Suspense

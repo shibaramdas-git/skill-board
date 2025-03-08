@@ -259,11 +259,7 @@ export default function ProductsPage() {
           isOpen={openAdd}
           modalSize='screen'
           onClose={() => setOpenAdd(false)}
-          // onSubmit={() => {
-          //   setOpenAdd(false);
-          //   if (openAdd) toast.success('Status updated successfully !');
-          // }}
-          title='Add data form'
+          title='Add Products'
           body={<AddProductForm />}
         />
       )}
@@ -275,8 +271,10 @@ export default function ProductsPage() {
           body={
             <>
               <p>
-                Are you sure you want to delete this Banner ? This action cannot
-                be undone.
+                Are you sure you want to{' '}
+                <span className='text-red-500'>delete this Product</span> ?{' '}
+                <br />
+                This action cannot be undone.
               </p>
               <div className='flex justify-end gap-2'>
                 <Button
@@ -284,7 +282,7 @@ export default function ProductsPage() {
                   onClick={() => {
                     setOpenDelete(false);
                     if (openDelete)
-                      toast.success('Banner Deleted successfully !');
+                      toast.success('Prpducte Deleted successfully !');
                   }}
                 >
                   Delete

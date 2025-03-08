@@ -122,7 +122,7 @@ export const ViewProductDetails: React.FC<ProductDetailsProps> = ({
           <ScrollArea className='max-h-[300px]'>
             {product.reviews.length > 0 ? (
               product.reviews.map((review, index) => (
-                <div key={index} className='border-b p-3'>
+                <div key={index} className='border-b p-3 last:border-b-0'>
                   <p className='text-sm font-semibold'>{review.reviewerName}</p>
                   <p className='text-sm'>⭐ {review.rating}/5</p>
                   <p className='text-sm'>{review.comment}</p>
